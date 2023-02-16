@@ -20,8 +20,20 @@ public class assign3 {
 			
 		}
 		
-		
 		return sum;
+	}
+	
+	public int productOfArray(int[] b) {
+		
+		int product = 0;
+		
+		for(int i = 0; i < b.length; i++) {
+			
+			product = product * b[i];
+		}
+		
+		return product;
+		
 	}
 	
 	
