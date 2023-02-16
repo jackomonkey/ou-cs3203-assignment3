@@ -1,4 +1,5 @@
 package cs3203a3;
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class assign3 {
@@ -25,6 +26,7 @@ public class assign3 {
 		int theProduct;
 		theProduct = productOfArray(ar);
 		System.out.println("Product of array: " + theProduct);
+		
 		scanner.close();
 		
 	}
@@ -55,5 +57,18 @@ public class assign3 {
 		
 	}
 	
+	public static String reverseArray(int[] c) {
+		
+		int[] reverse = new int[c.length];
+		
+		for(int i = 0; i < c.length; i++) {
+			
+			reverse[i] = c[c.length - 1 - i];
+			
+		}
+	
+		
+		return Arrays.toString(reverse);
+	}
 	
 }
