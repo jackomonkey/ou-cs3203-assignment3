@@ -2,7 +2,7 @@ package cs3203a3;
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class assign3 {
+public class assign3 {                                  //part10 NEW BRANCH
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
