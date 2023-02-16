@@ -27,6 +27,10 @@ public class assign3 {
 		theProduct = productOfArray(ar);
 		System.out.println("Product of array: " + theProduct);
 		
+		int rev[] = reverseArray(ar);
+		
+		System.out.println(Arrays.toString(rev));
+		
 		scanner.close();
 		
 	}
@@ -57,7 +61,7 @@ public class assign3 {
 		
 	}
 	
-	public static String reverseArray(int[] c) {
+	public static int[] reverseArray(int[] c) {
 		
 		int[] reverse = new int[c.length];
 		
@@ -68,7 +72,6 @@ public class assign3 {
 		}
 	
 		
-		return Arrays.toString(reverse);
+		return reverse;
 	}
-	
 }
