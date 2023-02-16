@@ -6,11 +6,30 @@ public class assign3 {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
-		System.out.println("Hello World!");
+		Scanner scanner = new Scanner(System.in);
+		
+		System.out.println("Enter 5 numbers:");
+		
+		int num;
+		int ar[] = new int[5];
+		for(int i = 0; i < 5; i++) {
+			
+			num = scanner.nextInt();
+			ar[i] = num;
+		}
+		
+		int theSum;
+		theSum = sumOfArray(ar);
+		System.out.println("Sum of array: " + theSum);
+		
+		int theProduct;
+		theProduct = productOfArray(ar);
+		System.out.println("Product of array: " + theProduct);
+		scanner.close();
 		
 	}
 
-	public int sumOfArray(int[] a) {
+	public static int sumOfArray(int[] a) {
 		
 		int sum = 0;
 		
@@ -23,9 +42,9 @@ public class assign3 {
 		return sum;
 	}
 	
-	public int productOfArray(int[] b) {
+	public static int productOfArray(int[] b) {
 		
-		int product = 0;
+		int product = 1;
 		
 		for(int i = 0; i < b.length; i++) {
 			
